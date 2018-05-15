@@ -26,7 +26,7 @@ class BottomNavigationExampleSimple extends Component {
       bottom: 0
     }
     return (
-      <Paper  zDepth={1}>
+      <Paper zDepth={1}>
         <BottomNavigation
           style={style}
           selectedIndex={this.state.selectedIndex}

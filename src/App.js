@@ -4,17 +4,29 @@ import logo from './logo.svg';
 import AppBar from './AppBar/AppBar'
 import BottomNavigation from './BottomNavigation/BottomNavigation'
 // import Login from './Login/Login'
-import LoginScreen from './Login/LoginScreen'
+import Login from './Login/Login'
 import './App.css';
 
 class App extends Component {
+
   render() {
+    const style = {
+      margin: '0 auto'
+    }
     return (
-      <MuiThemeProvider>
-        <AppBar/>
-        <LoginScreen/>
-        <BottomNavigation/>
-      </MuiThemeProvider>
+      <div>
+        <MuiThemeProvider>
+          <AppBar/>
+        </MuiThemeProvider>
+
+        <MuiThemeProvider>
+          <Login style = { style }/>
+        </MuiThemeProvider>
+        
+        <MuiThemeProvider>
+          <BottomNavigation />
+        </MuiThemeProvider>
+      </div>
     );
   }
 }
